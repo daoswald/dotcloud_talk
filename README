@@ -1,0 +1,18 @@
+=head1
+dotCloud, use Perl;
+
+=head2
+A Perl Mongers talk on using dotCloud with Perl.
+
+Examples given using Mojolicious web framework.
+
+=head2
+Presented to Thousand Oaks Perl Mongers 8/9/2012.
+
+=head2
+David Oswald
+
+daoswald@gmail.com
+davido@cpan.org
+
+Technically reviewed by dotCloud.
