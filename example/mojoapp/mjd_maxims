@@ -120,7 +120,10 @@ __DATA__
 <ul>
 % foreach my $maxpair ( @{$maxims} ) {
     <li>
-    <%= link_to "/$maxpair->[0]" => begin =%><%=$maxpair->[0]=%><%end%>: <%=$maxpair->[1]=%>
+      <%= link_to "/$maxpair->[0]" => begin =%>
+        <%=$maxpair->[0]=%>
+      <%end%>:
+      <%=$maxpair->[1]=%>
     </li>
 % }
 </ul>
@@ -137,15 +140,17 @@ __DATA__
     </article>
     <footer>
       <hr />
-      <p> [
-        %= link_to '/' => begin
-          The full list
-        % end
-        |
-        %= link_to 'http://jwenet.net/notebook/2005/1036.html' => begin
-          Original article
-        % end
-      ] </p>
+      <p>
+        [ 
+          %= link_to '/' => begin
+            The full list
+          % end
+          |
+          %= link_to 'http://jwenet.net/notebook/2005/1036.html' => begin
+            Original article
+          % end
+        ]
+      </p>
     </footer>
   </body>
 </html>
