@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 27</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#DD4814" vlink="#3C3C3C" alink="#DD4814">
+<center>
+<a href="text0.html">First page</a> <a href="text25.html">Back</a> <a href="text27.html">Continue</a> <a href="text31.html">Last page</a> <a href="img26.html">Graphics</a></center><br>
+<h1 style="direction:ltr;">A sample use-case</h1>
+<ul><li style="direction:ltr;"><h2>Client requires high availability web, and database redundancy:</h2></li>
+<ul><li style="direction:ltr;">Perl web service scaled to two 320MB instances.</li>
+<ul><li style="direction:ltr;">Load balancing, automatic failover, separate availability zones.</li>
+<li style="direction:ltr;">4x80MB per service instance.  Enough for Mojolicious, DBIx::Class, Moose, and plenty of breathing room..</li>
+</ul><li style="direction:ltr;">Database scaled to two instances of 512MB (5GB storage).</li>
+<ul><li style="direction:ltr;">Replication/syncing, automatic failover, separate availability zones.</li>
+</ul></ul><li style="direction:ltr;"><h2>Cost: $224.64/month.</h2></li>
+<li style="direction:ltr;"><h2>If they need custom domain and their own SSL certificate, add $21.60/month</h2></li>
+<ul><li style="direction:ltr;">DotCloud configures a dedicated load balancer instance (since SSL requires at least one IP address per domain, or more accurately, per certificate).</li>
+</ul><li style="direction:ltr;"><h2>Client (and developer/maintainer) get to sleep at night.  Sorry IT department – nothing to see here. ;)</h2></li>
+</ul></body>
+</html>
