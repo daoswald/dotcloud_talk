@@ -1,2 +1,2 @@
 $ENV{MOJO_MODE} = 'production';
-require mojoapp;
+require 'mojoapp';
