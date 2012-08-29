@@ -7,14 +7,24 @@
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#DD4814" vlink="#3C3C3C" alink="#DD4814">
 <center>
-<a href="text0.html">First page</a> <a href="text23.html">Back</a> <a href="text25.html">Continue</a> <a href="text31.html">Last page</a> <a href="img24.html">Graphics</a></center><br>
-<h1 style="direction:ltr;">Odds and ends</h1>
-<ul><li style="direction:ltr;"><h2>Static content will be served out of static/</h2></li>
-<li style="direction:ltr;"><h2>Include an nginx.conf file to override the default nginx configuration.</h2></li>
-<li style="direction:ltr;"><h2>Crontabs may be set in the Perl service, or in a separate Perl worker service if CPU is a problem.</h2></li>
-<li style="direction:ltr;"><h2>Perl Worker services can do just about anything (a daemon, or whatever you dream up).</h2></li>
-<li style="direction:ltr;"><h2>Off-site backups can be scheduled with crontabs, even within the database service itself.</h2></li>
-<li style="direction:ltr;"><h2>ssh into any service via dotcloud ssh myapp.servicename</h2></li>
-<li style="direction:ltr;"><h2>dotCloud is the first PaaS to provide WebSocket support (Mojolicious supports WebSocket too).</h2></li>
-</ul></body>
+<a href="text0.html">First page</a> <a href="text23.html">Back</a> <a href="text25.html">Continue</a> <a href="text36.html">Last page</a> <a href="dotcloud_pm_talk.html">Overview</a> <a href="img24.html">Graphics</a></center><br>
+<h1 style="direction:ltr;">A more scalable directory structure</h1>
+<ul><li style="direction:ltr;"><h2>project_root/</h2></li>
+<ul><li style="direction:ltr;">dotcloud.yml</li>
+<li style="direction:ltr;">database_init.sql</li>
+<li style="direction:ltr;">myapp/</li>
+<ul><li style="direction:ltr;">app.psgi</li>
+<li style="direction:ltr;">Makefile.PL</li>
+<li style="direction:ltr;">myapp.conf</li>
+<li style="direction:ltr;">lib/</li>
+<ul><li style="direction:ltr;">Model/</li>
+<li style="direction:ltr;">MyApp.pm</li>
+<li style="direction:ltr;">Controller/</li>
+</ul><li style="direction:ltr;">log/</li>
+<li style="direction:ltr;">public/</li>
+<li style="direction:ltr;">script/</li>
+<ul><li style="direction:ltr;">myapp.pl</li>
+</ul><li style="direction:ltr;">t/</li>
+<li style="direction:ltr;">templates/</li>
+</ul></ul></ul></body>
 </html>

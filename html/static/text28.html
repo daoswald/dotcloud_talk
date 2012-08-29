@@ -7,16 +7,22 @@
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#DD4814" vlink="#3C3C3C" alink="#DD4814">
 <center>
-<a href="text0.html">First page</a> <a href="text27.html">Back</a> <a href="text29.html">Continue</a> <a href="text31.html">Last page</a> <a href="img28.html">Graphics</a></center><br>
-<h1 style="direction:ltr;">Conclusions</h1>
-<ul><li style="direction:ltr;"><h2>More expensive than bare EC2.</h2></li>
-<ul><li style="direction:ltr;">dotCloud is to the Cloud what Perl is to C (does more, costs more).</li>
-</ul><li style="direction:ltr;"><h2>Supportive of the developer community.</h2></li>
-<li style="direction:ltr;"><h2>Can-do attitude.</h2></li>
-<li style="direction:ltr;"><h2>Innovative.</h2></li>
-<li style="direction:ltr;"><h2>Reliable.</h2></li>
-<li style="direction:ltr;"><h2>It's easy.</h2></li>
-<li style="direction:ltr;"><h2>Deploying an application takes minutes.</h2></li>
-<li style="direction:ltr;"><h2>Hot-patches take seconds.</h2></li>
-</ul></body>
+<a href="text0.html">First page</a> <a href="text27.html">Back</a> <a href="text29.html">Continue</a> <a href="text36.html">Last page</a> <a href="dotcloud_pm_talk.html">Overview</a> <a href="img28.html">Graphics</a></center><br>
+<h1 style="direction:ltr;">Other dotcloud.yml options</h1>
+<ul><li style="direction:ltr;"><h2>www:</h2></li>
+<ul><li style="direction:ltr;">type: perl</li>
+<li style="direction:ltr;">approot: helloperl</li>
+<li style="direction:ltr;">requirements:</li>
+<ul><li style="direction:ltr;">http://example.com/something/not/on/cpan/yet.tar.gz</li>
+</ul><li style="direction:ltr;">config:</li>
+<ul><li style="direction:ltr;">perl_version: v5.16.x</li>
+<li style="direction:ltr;">uwsgi_memory_report: true</li>
+<li style="direction:ltr;">uwsgi_buffer_size: 8192</li>
+<li style="direction:ltr;">uwsgi_processes: 4</li>
+</ul><li style="direction:ltr;">prebuild: ./prebuild.pl</li>
+<li style="direction:ltr;">postbuild: ./postbuild.pl</li>
+</ul><li style="direction:ltr;"><h2>worker:</h2></li>
+<ul><li style="direction:ltr;">type: perl-worker</li>
+<li style="direction:ltr;">…</li>
+</ul></ul></body>
 </html>

@@ -7,17 +7,29 @@
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#DD4814" vlink="#3C3C3C" alink="#DD4814">
 <center>
-<a href="text0.html">First page</a> <a href="text25.html">Back</a> <a href="text27.html">Continue</a> <a href="text31.html">Last page</a> <a href="img26.html">Graphics</a></center><br>
-<h1 style="direction:ltr;">A sample use-case</h1>
-<ul><li style="direction:ltr;"><h2>Client requires high availability web, and database redundancy:</h2></li>
-<ul><li style="direction:ltr;">Perl web service scaled to two 320MB instances.</li>
-<ul><li style="direction:ltr;">Load balancing, automatic failover, separate availability zones.</li>
-<li style="direction:ltr;">4x80MB per service instance.  Enough for Mojolicious, DBIx::Class, Moose, and plenty of breathing room..</li>
-</ul><li style="direction:ltr;">Database scaled to two instances of 512MB (5GB storage).</li>
-<ul><li style="direction:ltr;">Replication/syncing, automatic failover, separate availability zones.</li>
-</ul></ul><li style="direction:ltr;"><h2>Cost: $224.64/month.</h2></li>
-<li style="direction:ltr;"><h2>If they need custom domain and their own SSL certificate, add $21.60/month</h2></li>
-<ul><li style="direction:ltr;">DotCloud configures a dedicated load balancer instance (since SSL requires at least one IP address per domain, or more accurately, per certificate).</li>
-</ul><li style="direction:ltr;"><h2>Client (and developer/maintainer) get to sleep at night.  Sorry IT department – nothing to see here. ;)</h2></li>
+<a href="text0.html">First page</a> <a href="text25.html">Back</a> <a href="text27.html">Continue</a> <a href="text36.html">Last page</a> <a href="dotcloud_pm_talk.html">Overview</a> <a href="img26.html">Graphics</a></center><br>
+<h1 style="direction:ltr;">environment.json</h1>
+<ul><li style="direction:ltr;"><h2>{</h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_WWW_HTTP_URL&quot;: &quot;http://myapp-daoswald.dotcloud.com/&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_WWW_SSH_PORT&quot;: &quot;XXXXX&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_WWW_SSH_URL&quot;: &quot;ssh://dotcloud@myapp-daoswald.dotcloud.com:XXXXX&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_MYSQL_LOGIN&quot;: &quot;XXXXXX&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_WWW_SSH_HOST&quot;: &quot;myapp-daoswald.dotcloud.com&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_PROJECT&quot;: &quot;myapp&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_SERVICE_NAME&quot;: &quot;www&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_WWW_HTTP_VHOSTS_LIST&quot;: &quot;myapp-daoswald.dotcloud.com&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;PORT_SSH&quot;: XXXXX, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_SSH_PORT&quot;: &quot;XXXXX&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_WWW_HTTP_HOST&quot;: &quot;myapp-daoswald.dotcloud.com&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_SSH_URL&quot;: &quot;ssh://mysql@myapp-daoswald.dotcloud.com:XXXXX&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_ENVIRONMENT&quot;: &quot;default&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_SSH_HOST&quot;: &quot;myapp-daoswald.dotcloud.com&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_MYSQL_HOST&quot;: &quot;myapp-daoswald.dotcloud.com&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_MYSQL_PASSWORD&quot;: &quot;some_passphrase&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_MYSQL_PORT&quot;: &quot;XXXXX&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_DB_MYSQL_URL&quot;: &quot;mysql://USER:PASS_XXXXX@myapp-daoswald.dotcloud.com:XXXXX&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;DOTCLOUD_SERVICE_ID&quot;: &quot;0&quot;, </h2></li>
+<li style="direction:ltr;"><h2>    &quot;PORT_HTTP&quot;: 80</h2></li>
+<li style="direction:ltr;"><h2>}</h2></li>
 </ul></body>
 </html>

@@ -7,19 +7,15 @@
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#DD4814" vlink="#3C3C3C" alink="#DD4814">
 <center>
-<a href="text0.html">First page</a> <a href="text22.html">Back</a> <a href="text24.html">Continue</a> <a href="text31.html">Last page</a> <a href="img23.html">Graphics</a></center><br>
-<h1 style="direction:ltr;">The database connection</h1>
-<ul><li style="direction:ltr;"><h2>dotcloud.yml:</h2></li>
-<ul><li style="direction:ltr;">www:</li>
-<li style="direction:ltr;">  type: Perl</li>
-<li style="direction:ltr;">  approot: myapp/script</li>
-<li style="direction:ltr;">db:</li>
-<li style="direction:ltr;">  type: mysql</li>
-</ul><li style="direction:ltr;"><h2>environment.json </h2></li>
-<ul><li style="direction:ltr;">Readable by the application. Contains database host, port, login, and password info, and whatever else you put there explicitly.</li>
-</ul><li style="direction:ltr;"><h2>$ dotcloud info myapp.db</h2></li>
-<ul><li style="direction:ltr;">View service parameters. </li>
-</ul><li style="direction:ltr;"><h2>$ dotcloud run myapp.db – mysql</h2></li>
-<ul><li style="direction:ltr;">Get a mysql&gt; prompt to further refine the configuration.</li>
-</ul></ul></body>
+<a href="text0.html">First page</a> <a href="text22.html">Back</a> <a href="text24.html">Continue</a> <a href="text36.html">Last page</a> <a href="dotcloud_pm_talk.html">Overview</a> <a href="img23.html">Graphics</a></center><br>
+<h1 style="direction:ltr;">A simple directory structure</h1>
+<ul><li style="direction:ltr;"><h2>project_root/</h2></li>
+<ul><ul><li style="direction:ltr;">dotcloud.yml</li>
+<li style="direction:ltr;">app_root/</li>
+<ul><ul><li style="direction:ltr;">app.psgi</li>
+<li style="direction:ltr;">Makefile.PL</li>
+<li style="direction:ltr;">myapp.pl</li>
+<li style="direction:ltr;">static/</li>
+<li style="direction:ltr;">...</li>
+</ul></ul></ul></ul></ul></body>
 </html>

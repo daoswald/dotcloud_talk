@@ -7,10 +7,20 @@
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#DD4814" vlink="#3C3C3C" alink="#DD4814">
 <center>
-<a href="text0.html">First page</a> <a href="text30.html">Back</a> Continue Last page <a href="img31.html">Graphics</a></center><br>
-<h1 style="direction:ltr;"></h1>
-<h2 style="direction:ltr;">Experiment! Play!
-<h2 style="direction:ltr;">$ dotcloud push my_cool_idea
-<h2 style="direction:ltr;">Let's reserve a few minutes next month to look at what you deployed to dotCloud.
-</body>
+<a href="text0.html">First page</a> <a href="text30.html">Back</a> <a href="text32.html">Continue</a> <a href="text36.html">Last page</a> <a href="dotcloud_pm_talk.html">Overview</a> <a href="img31.html">Graphics</a></center><br>
+<h1 style="direction:ltr;">A sample use-case</h1>
+<ul><li style="direction:ltr;"><h2>Client requires high availability web, and database redundancy:</h2></li>
+<ul><li style="direction:ltr;">Perl web service scaled to two 256MB instances.</li>
+<ul><li style="direction:ltr;">Load balancing, automatic failover, separate availability zones.</li>
+<li style="direction:ltr;">4 processes of 64MB each per service instance.</li>
+<ul><li style="direction:ltr;">Enough for Mojolicious, DBIx::Class, Moose, and some breathing room.</li>
+</ul></ul><li style="direction:ltr;">Database scaled to two instances of 512MB (5GB storage).</li>
+<ul><li style="direction:ltr;">Replication/syncing, automatic failover, separate availability zones.</li>
+</ul><li style="direction:ltr;">A single 64MB Perl worker for cron jobs (backups, etc.)</li>
+</ul><li style="direction:ltr;"><h2>Cost: $216/month.</h2></li>
+<li style="direction:ltr;"><h2>A custom domain with SSL certificate, add $21.60/month: total, $237.60.</h2></li>
+<ul><li style="direction:ltr;">DotCloud configures a dedicated load balancer instance (since SSL requires at least one IP address per domain, or more accurately, per certificate).</li>
+</ul><li style="direction:ltr;"><h2>Client and developer each get to sleep at night: <i>Priceless</i>.</h2></li>
+<ul><li style="direction:ltr;">Sorry IT department – nothing to see here. ;)</li>
+</ul></ul></body>
 </html>
