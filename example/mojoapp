@@ -1,0 +1,40 @@
+#!/usr/bin/env perl
+use Mojolicious::Lite;
+
+use Lingua::PigLatin 'piglatin';
+
+get '/' => sub {
+  my $self = shift;
+  my $output = $self->param('english') 
+    ? lc piglatin( scalar $self->param('english' ) )
+    : q{};
+  $self->render( index => piglatin => $output );
+};
+
+app->start;
+
+__DATA__
+
+@@ index.html.ep
+% layout 'default';
+% title 'Piglatin Translator';
+<h1><%= title =%></h1>
+
+%= form_for '/' => ( method => 'GET' ) => begin
+<h3>English word or phrase:</h3>
+%= text_field 'english' => size => 50 => value => 'Just another Perl hacker,'
+%= submit_button
+% end
+
+% if( length $piglatin ) {
+  <h3>Translated:</h3>
+  <%= $piglatin %>
+% }
+
+
+@@ layouts/default.html.ep
+<!DOCTYPE html>
+<html>
+  <head><title><%= title %></title></head>
+  <body><%= content %></body>
+</html>

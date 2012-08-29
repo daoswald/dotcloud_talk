@@ -6,9 +6,9 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     VERSION   => '0.01',
     PREREQ_PM => {
-        'Mojolicious'     => '3.0',
-        'Plack'           => '0',
-        'Test::More'      => '0',
+        'Mojolicious'		=> '3.0',
+        'YAML'			=> '0',
+	'Lingua::PigLatin'	=> '0',
     },
     test => { TESTS => 't/*.t' }
 );
